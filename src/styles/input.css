@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .background-color-header {
+    background-color: hsla(0, 0%, 7%, 0.8);
+  }
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KKBOX API Search</title>
+    <link rel="stylesheet" href="./src/styles/output.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="background-color-header">
+        <div class="container flex justify-between items-center">
+          <h1>
+            <a
+              href="#"
+              class="block bg-center bg-no-repeat bg-70% bg-header-logo w-[154px] h-[72px] ml-[-20px]"
+            ></a>
+          </h1>
+          <ul class="text-white flex gap-[20px]">
+            <li><a href="#">特色功能</a></li>
+            <li><a href="#">訂閱方案</a></li>
+            <li><a href="#">娛樂情報</a></li>
+            <li><a href="#">會員服務</a></li>
+            <li><a href="#">關於我們</a></li>
+            <li><a href="#">搜尋</a></li>
+            <li><a href="#">下載</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div class="container pt-8">
+        <form id="searchForm">
+          <div
+            class="flex items-center border-b-2 border-black py-3 w-8/12 mx-auto"
+          >
+            <label for="search" class="inline-block mr-3">
+              <img
+                src="https://pkg.kfs.io/kk-web/img/icon/search-blue.svg"
+                alt="搜尋圖片"
+                class="scale-150"
+              />
+            </label>
+            <input
+              type="text"
+              name="search"
+              id="search"
+              placeholder="請輸入歌曲"
+              class="w-full text-3xl py-1 pl-3 outline-none"
+            />
+          </div>
+        </form>
+        <h2 class="text-3xl py-5">歌曲</h2>
+        <ul
+          class="flex flex-wrap justify-between columns-3"
+          id="song-list"
+        ></ul>
+      </div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.7/axios.min.js"></script>
+    <script src="all.js"></script>
+  </body>
+</html>
